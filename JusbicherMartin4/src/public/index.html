@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Open+Sans:ital,wght@1,300&family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>PARA VER LA LISTA DE PRODUCTOS HAGA CLICK <br><a href="http://localhost:8080/api/productos/"> AQUÍ</a></h1>
+    <div>
+        <h2>AGREGAR PRODUCTO</h2>
+        <form id="productosForm">
+            <label><br>Title<br></label>
+            <input name="title" required>
+            <label><br>Prices<br></label>
+            <input name="prices" required>
+            <label><br>Thumbnail<br></label>
+            <input name="thumbnail" required><br>
+            <br>
+            <input type="submit" id="int">
+        </form>
+    </div>
+    <div>
+        <h2>FUNCIONES</h2>
+        <form action="http://localhost:8080/api/productos/id" method="get">
+            <label><br>Buscar producto por id:</label>
+            <input type = "number" name="id"required>
+            <button>Buscar</button>
+        </form>
+
+        <form id="deleteForm">
+            <label><br>Borrar producto por id:</label>
+            <input type = "number" name="delete"required><br>
+            <br>
+            <input type="submit" id="int">
+        </form>
+    </div>
+    <div>
+        <h2>ACTUALIZAR UN PRODUCTO</h2>
+        <form id="actualizarForm">
+            <label><br>Id del producto a actualizar<br></label>
+            <input type = "number" name="id"required>
+            <label><br>Title<br></label>
+            <input name="title"required>
+            <label><br>Price<br></label>
+            <input name="prices"required>
+            <label><br>Thumbnail<br></label>
+            <input name="thumbnail"required><br>
+            <br>
+            <input type="submit" id="int">
+        </form>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

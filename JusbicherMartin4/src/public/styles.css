@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+    background: rgb(0,54,77);
+    background: radial-gradient(circle, rgba(0,54,77,1) 0%, rgba(0,0,0,1) 100%);
+    font-family: 'Roboto Mono', monospace;
+}
+h1{
+    text-align: center;
+    padding: 2%;
+    color:white
+}
+div{
+    margin: 25px;
+}
+form{
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    width: 380.38px;   
+    text-align: center;
+}
+h2{
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    width: 354px;
+    padding: 1%;
+    color:white
+}
+label{
+    margin: 10px;
+}
+input {
+    width: 250px;
+    padding: 2%;
+}
+button{
+    width: 250px;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
+}
+#int{
+    margin-bottom: 10px;
+}
