@@ -21,6 +21,7 @@ const deleteSubmit = (evt,form,route) =>{
     let formData = new FormData(form);
     let obj = {};
     formData.forEach((value,key)=>obj[key]=value);
+    console.log(formData)
     fetch(route,{
         method:"DELETE",
         body:JSON.stringify(obj),

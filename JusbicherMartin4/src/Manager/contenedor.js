@@ -33,17 +33,14 @@ class Contenedor{
             console.log("Hay un error: "+ error )
         }
     }
-
     getById = async(idNumber) =>{
         try {
             const data = await this.getAllProducts();
-            if(data.id !=idNumber){
-                console.log(data.find((element) => element.id == idNumber))
+            if(data.id != idNumber){
                 return data.find((element) => element.id == idNumber)
             }else{
                 console.log("null")
             }
-
         } catch (error) {
             console.log("Hay un error: " + error)
         }
@@ -78,21 +75,17 @@ class Contenedor{
             console.log("Hay un error" + error )
         }
     }
-    update = async(obj) =>{
+    update = async(id, obj) =>{
         let arr = await this.getAllProducts()
-        let id = obj.id;
-        let titulo = obj.title;
-        let price = obj.prices;
-        let thumbnail = obj.thumbnail;
+        console.log(id,obj)
         arr.map(function(dato){
             if(dato.id == id){
-                dato.title = titulo;
-                dato.prices = price;
-                dato.thumbnail = thumbnail;
+                dato.title = obj.title;
+                dato.prices = obj.prices;
+                dato.thumbnail = obj.thumbnail;
             }
         })
         await fs.promises.writeFile(path,JSON.stringify(arr,null,'\t'));
-        console.log(arr)
         return arr;
     }
 

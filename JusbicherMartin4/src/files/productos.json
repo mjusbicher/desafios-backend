@@ -1,9 +1,9 @@
 [
 	{
-		"title": "Leche",
-		"prices": "5",
-		"thumbnail": "https://picsum.photos/200/300",
-		"id": 1
+		"thumbnail": "random",
+		"id": 1,
+		"title": "Test",
+		"prices": 8
 	},
 	{
 		"title": "Cereales",

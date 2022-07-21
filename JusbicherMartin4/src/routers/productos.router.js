@@ -12,16 +12,14 @@ router.get('/',async(req,res)=>{
 
 //GET '/api/productos/:id' -> devuelve un producto según su id.
 
-router.get('/id',async(req,res)=>{
-    let Lista = await manager.getAllProducts()
-    if (req.query.id >Lista.length) {
+router.get('/:id',async(req,res)=>{
+    const productById = await manager.getById(req.params.id);
+    console.log(productById)
+    if (req.params.id != productById.id) {
         res.send("404 El valor pedido no existe")
     } else {
-        let numero = req.query.id
-        let dataById = await manager.getById(numero)
-        res.send(dataById)
+        res.send(productById)
     }
-
 })
 
 //POST '/api/productos' -> recibe y agrega un producto.
@@ -34,9 +32,8 @@ router.post('/',async(req,res)=>{
 
 //PUT '/api/productos/:id' -> recibe y actualiza un producto según su id.
 
-router.put('/',async(req,res)=>{
-    let producto = req.body
-    await manager.update(producto)
+router.put('/:id',async(req,res)=>{
+    await manager.update(req.params.id, req.body);
 })
 
 
