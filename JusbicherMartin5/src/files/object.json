@@ -1,0 +1,18 @@
+[
+	{
+		"name": "Leche",
+		"precio": "50",
+		"color": "blanco",
+		"image": "1659018959523-images.jpg",
+		"id": 1,
+		"isAdopted": false
+	},
+	{
+		"name": "Cafe",
+		"precio": "25",
+		"color": "marron",
+		"image": "1659018978313-descarga.jpg",
+		"id": 2,
+		"isAdopted": false
+	}
+]
