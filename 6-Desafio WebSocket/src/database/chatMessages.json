@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "email": "test1@hotmail.com",
+    "date": "4/8/2022 18:11:43",
+    "messageText": "Hola"
+  },
+  {
+    "id": 2,
+    "email": "test2@gmail.com",
+    "date": "4/8/2022 18:11:43",
+    "messageText": "que tal"
+  },
+  {
+    "id": 3,
+    "email": "test3@outlook.com",
+    "date": "4/8/2022 18:11:43",
+    "messageText": "probando"
+  },
+  {
+    "id": 4,
+    "email": "test4@yahoo.com",
+    "date": "4/8/2022 18:11:43",
+    "messageText": "Funciona."
+  }
+]

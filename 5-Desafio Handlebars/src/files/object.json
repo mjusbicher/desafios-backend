@@ -14,5 +14,13 @@
 		"image": "1659018978313-descarga.jpg",
 		"id": 2,
 		"isAdopted": false
+	},
+	{
+		"name": "Maxi",
+		"precio": "50000",
+		"color": "Negrito",
+		"image": "1659637033611-Screenshot_17.jpg",
+		"id": 3,
+		"isAdopted": false
 	}
 ]

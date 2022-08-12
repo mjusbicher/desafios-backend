@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Cereales",
+    "price": 50,
+    "thumbnail": "https://picsum.photos/100"
+  },
+  {
+    "id": 2,
+    "title": "Tomate",
+    "price": 550,
+    "thumbnail": "https://picsum.photos/200"
+  },
+  {
+    "id": 3,
+    "title": "Queso",
+    "price": 1025,
+    "thumbnail": "https://picsum.photos/300"
+  },
+  {
+    "id": 4,
+    "title": "Carne",
+    "price": 420,
+    "thumbnail": "https://picsum.photos/400"
+  },
+  {
+    "id": 5,
+    "title": "Lacteos",
+    "price": 101,
+    "thumbnail": "https://picsum.photos/500"
+  }
+]
