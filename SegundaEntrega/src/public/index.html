@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>AGREGAR PRODUCTO</h2>
+    <form id="productsForm">
+      <label><br />Title<br /></label>
+      <input name="title" onfocus="this.value=''" type="text" required />
+      <label><br />Price<br /></label>
+      <input name="price" onfocus="this.value=''" type="number" required />
+      <label><br />Thumbnail<br /></label>
+      <input name="thumbnail" onfocus="this.value=''" type="text" required /><br />
+      <label><br />Description<br /></label>
+      <input name="description" onfocus="this.value=''" type="text" required /><br />
+      <label><br />Stock<br /></label>
+      <input name="stock" onfocus="this.value=''" type="number" required /><br />
+      <input type="submit"/>
+    </form>
+    <br>
+    <h2>FUNCIONES</h2>
+    <form id="addForm">
+      <label><br />Buscar producto por id :</label>
+      <input type="number" onfocus="this.value=''" name="add" required />
+      <br />
+      <input type="submit" />
+    </form>
+
+    <form id="deleteForm">
+      <label><br />Borrar por id:</label>
+      <input type="number" name="delete" required /><br />
+      <input type="submit" />
+    </form>
+    <br>
+    <h2>ACTUALIZAR PRODUCTO</h2>
+    <form id="updateForm">
+      <label><br />Id del producto a actualizar<br /></label>
+      <input type="number" onfocus="this.value=''" name="id" required />
+      <label><br />Title<br /></label>
+      <input name="title" onfocus="this.value=''" required />
+      <label><br />Price<br /></label>
+      <input name="price" onfocus="this.value=''" required />
+      <label><br />Thumbnail<br /></label>
+      <input name="thumbnail" onfocus="this.value=''" required /><br />
+      <label><br />Description<br /></label>
+      <input name="description" onfocus="this.value=''" type="text" required /><br />
+      <label><br />Stock<br /></label>
+      <input name="stock" onfocus="this.value=''" type="number" required /><br />
+      <input type="submit" />
+    </form>
+    <h1>
+      Ver ultimo producto agregado:
+      <a
+        href="http://localhost:8080/api/products/"
+      >
+      Click aqui</a
+      >
+    </h1>
+    <script src="./js/index2.js"></script>
+  </body>
+</html>

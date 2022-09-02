@@ -1,0 +1,32 @@
+[
+	{
+		"title": "test",
+		"price": "1",
+		"thumbnail": "test",
+		"description": "test",
+		"stock": "24",
+		"id": 1,
+		"date": "1/9/2022",
+		"code": "ccd99c3f-dfc4-4b26-b7a3-121c0825ff0b"
+	},
+	{
+		"title": "Leche",
+		"price": "50",
+		"thumbnail": "photo",
+		"description": "Leche description",
+		"stock": "266",
+		"id": 2,
+		"date": "1/9/2022",
+		"code": "994c45c1-2e85-446b-aeb1-2fb5a6f69e6b"
+	},
+	{
+		"title": "Detergente",
+		"price": "105",
+		"thumbnail": "photo",
+		"description": "Detergente description",
+		"stock": "120",
+		"id": 3,
+		"date": "1/9/2022",
+		"code": "d802e475-e13e-4225-a74e-ac1cde373d8f"
+	}
+]
